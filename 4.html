@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Bài 4: Tìm số đầu tiên trong dãy fibonacci chia hết cho 5.
+        var a = 1;
+        var b = 0;
+        for(i=1;i<=1000;i++){
+        c=a+b; //tong 2 so
+        if (c%5==0){
+            document.write(c + ' la so dau tien cua day so fibonacci chia het cho 5');
+            break;
+        }
+        
+        //document.write(c + '<br>'); //in ra man hinh
+        a=b;// thay gia tri a = b
+        b=c; // lay gia tri tong 2 so(c) gan' cho b, sau do quay lai xet dieu kien
+    }
+    </script>
+</body>
+</html>
